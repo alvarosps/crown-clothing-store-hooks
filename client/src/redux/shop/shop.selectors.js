@@ -19,10 +19,10 @@ export const selectCollection = collectionUrlParam => createSelector(
 
 export const selectIsCollectionFetching = createSelector(
     [selectShop],
-    shop => shop.isFetching
+    shop => {console.warn('isFetching'); return shop.isFetching;}
 );
 
 export const selectIsCollectionsLoading = createSelector(
     [selectShop],
-    shop => !!shop.collections
+    shop => {console.warn('isLoading'); return !!shop.collections;}
 );

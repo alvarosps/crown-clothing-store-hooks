@@ -13,7 +13,7 @@ import {
 } from './shop.actions';
 
 export function* fetchCollectionsAsync () {
-    yield console.log('fetchCollectionsAsyn()');
+    yield console.warn('fetchCollectionsAsyn()');
 
     try {
         const collectionRef = firestore.collection('collections');
